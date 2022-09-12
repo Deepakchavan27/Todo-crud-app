@@ -1,0 +1,24 @@
+{
+  "todos": [
+    {
+      "title": "LEARN REACT",
+      "status": false,
+      "id": 1
+    },
+    {
+      "title": "LEARN FETCH",
+      "status": false,
+      "id": 2
+    },
+    {
+      "title": "LEARN TODO",
+      "status": false,
+      "id": 3
+    },
+    {
+      "title": "ZEST",
+      "status": false,
+      "id": 4
+    }
+  ]
+}
