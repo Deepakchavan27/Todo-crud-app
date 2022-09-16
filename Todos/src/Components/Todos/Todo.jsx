@@ -8,15 +8,15 @@ function Todo() {
   const [todos, setTodos] = useState([]);
   const [loading, setLoading] = useState(false);
   const [titleSortBy, setTitleSortBy] = useState("asc");
-  const [page,setPage] = useState(1);
+  const [page, setPage] = useState(1);
 
   useEffect(() => {
     handleGetTodo();
-  }, [titleSortBy,page]);
+  }, [titleSortBy, page]);
 
   const handleGetTodo = () => {
     setLoading(true);
-    return getTodos({ titleSortBy,page })
+    return getTodos({ titleSortBy, page })
       .then((res) => {
         setLoading(false);
         setTodos(res);
@@ -103,10 +103,16 @@ function Todo() {
             handleDelete={handleDelete}
           />
         ))}
-        <button onClick={() =>setPage(prev => prev - 1)} disabled={page === 1}>Prev</button>
-        <button>{page}</button>
-        <button onClick={() =>setPage(prev => prev + 1)}>Next</button>    
-        <Pagination total={5} current = {page} onChange={(value) => setPage(value)}/>     
+      <button onClick={() => setPage((prev) => prev - 1)} disabled={page === 1}>
+        Prev
+      </button>
+      <button>{page}</button>
+      <button onClick={() => setPage((prev) => prev + 1)}>Next</button>
+      <Pagination
+        total={5}
+        current={page}
+        onChange={(value) => setPage(value)}
+      />
     </div>
   );
 }

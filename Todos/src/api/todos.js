@@ -1,7 +1,7 @@
 export const getTodos = (props = {}) => {
   const { titleSortBy = "ASC", page = 1} = props;
   return fetch(
-    `http://localhost:8080/todos?_sort=title&_order=${titleSortBy}&_page=${page}&_limit=2`
+    `http://localhost:8080/todos?_sort=title&_order=${titleSortBy}&_page=${page}&_limit=5`
   ).then((res) => res.json());
 };
 
@@ -33,3 +33,4 @@ export const deleteTodo = (id) => {
     },
   });
 };
+
