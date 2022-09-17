@@ -1,0 +1,24 @@
+{
+  "todos": [
+    {
+      "title": "LEARN REACT",
+      "status": false,
+      "id": 1
+    },
+    {
+      "title": "LEARN CSS",
+      "status": false,
+      "id": 2
+    },
+    {
+      "title": "LEARN HTML",
+      "status": false,
+      "id": 3
+    },
+    {
+      "title": "LEARN JS",
+      "status": false,
+      "id": 4
+    }
+  ]
+}
